@@ -1,0 +1,36 @@
+<div class="page">
+  <div class="nav">
+    <label>JZH</label>
+    <label>Sample Login</label>
+  </div>
+
+  <div class="dumb-text">
+    <p>Welcome to LOGINS-R-Us!!!</p>
+    <p>Home of the login Screen</p>
+    <p>If you login now nothing will happn</p>
+    <p>BUT!!!! Something will happen one day....</p>
+    <p>So! If you login and something happens then TODAY is one day</p>
+  </div>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="container">
+    <p>Login</p>
+    <div>
+      <div>
+        <label for="username">Username</label>
+      </div>
+      <div>
+        <input id="username" type="text" formControlName="username" />
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <label for="password">Password</label>
+      </div>
+      <div>
+        <input id="password" type="password" formControlName="password" />
+      </div>
+    </div>
+
+    <button class="button" type="submit">Purchase</button>
+  </form>
+</div>
